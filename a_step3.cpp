@@ -1,0 +1,25 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+  int n, k;
+  int idx;
+  cin >> n;
+  vector<int> a(n);
+
+  for (int i=0; i<n; i++) cin >> a[i];
+
+  cin >> k;
+
+  idx = -1;
+  
+  for (int i=0; i<n; i++){
+    if (a[i] == k){
+      idx = i;
+    }
+  }
+
+  cout << idx+1 << endl;
+  return 0;
+  
+}
