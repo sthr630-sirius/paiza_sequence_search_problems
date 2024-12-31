@@ -5,6 +5,6 @@ k = int(input())
 a.sort(reverse=True)
 
 for ai in a:
-    if ai < k:
+    if ai <= k:
         print(ai)
         break
